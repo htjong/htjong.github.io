@@ -315,7 +315,7 @@
             </a>
           </div>
           <div class="small-6 small-offset-3 medium-4 medium-offset-0 flex-container align-center align-middle">
-            <a class="icon-container flex-container align-center align-middle" href="https://www.linkedin.com/in/howardtjong">
+            <a class="icon-container flex-container align-center align-middle" href="https://www.linkedin.com/in/howardtjong" onclick="_trackLI()">
               <img class="contact-icon" src="assets/img/original-linkedin.jpg" alt="">
             </a>
           </div>
@@ -357,5 +357,15 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script> -->
     <script src="assets/js/app.js"></script>
+    <script>
+      function _trackLI() {
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'External Link',
+          eventAction: 'Click',
+          eventLabel: 'LinkedIn'
+        });
+      }
+    </script>
   </body>
 </html>
