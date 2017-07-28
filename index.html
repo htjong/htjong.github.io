@@ -305,17 +305,17 @@
           <h6 class="text small-10 small-offset-1 large-8 large-offset-2 text-center">If you'd like to learn more about me, my work, or are interested in working on a project together, feel free to get in touch - I would love to chat!</h6>
     
           <div class="small-6 small-offset-3 medium-4 medium-offset-0 flex-container align-center align-middle">
-            <a class="icon-container flex-container align-center align-middle" href="mailto:htjongetc@gmail.com">
+            <a class="icon-container flex-container align-center align-middle" href="mailto:htjongetc@gmail.com" onclick="_trackExternalLinks('GMail')">
               <img class="contact-icon" src="assets/img/email-open-512-v2.png" alt="">
             </a>
           </div>
           <div class="small-6 small-offset-3 medium-4 medium-offset-0 flex-container align-center align-middle">
-            <a class="icon-container flex-container align-center align-middle" href="https://github.com/htjong">
+            <a class="icon-container flex-container align-center align-middle" href="https://github.com/htjong" onclick="_trackExternalLinks('Github')">
               <img class="contact-icon" src="assets/img/original-github-logo.jpg" alt="">
             </a>
           </div>
           <div class="small-6 small-offset-3 medium-4 medium-offset-0 flex-container align-center align-middle">
-            <a class="icon-container flex-container align-center align-middle" href="https://www.linkedin.com/in/howardtjong" onclick="_trackLI()">
+            <a class="icon-container flex-container align-center align-middle" href="https://www.linkedin.com/in/howardtjong" onclick="_trackExternalLinks('LinkedIn')">
               <img class="contact-icon" src="assets/img/original-linkedin.jpg" alt="">
             </a>
           </div>
@@ -358,12 +358,12 @@
     <!-- <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script> -->
     <script src="assets/js/app.js"></script>
     <script>
-      function _trackLI() {
+      function _trackExternalLinks(label) {
         ga('send', {
           hitType: 'event',
           eventCategory: 'External Link',
           eventAction: 'Click',
-          eventLabel: 'LinkedIn'
+          eventLabel: label
         });
       }
     </script>
